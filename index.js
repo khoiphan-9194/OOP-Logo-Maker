@@ -56,11 +56,9 @@ const init = () => {
       // Use writeFile method imported from fs.promises to use promises instead of
       // a callback function
       .then(function(answers) {
-    
         writeFile(`examples/logo-${answers.shapeType}.svg`,geneRateShape(answers)) 
         .then(() => console.log(`Successfully created logo ${answers.shapeType}.svg`))
-        .catch((err) => console.error(err));
-        
+        .catch((err) => console.error(err));     
       })
 
   };
@@ -80,10 +78,12 @@ const init = () => {
     if (response.shapeType == 'Square') {
         var userShape = new Square (response.shapeType='rect', response.shapeColor, response.text,response.textColor)
        // console.log(userShape);
+       response.shapeType='Square';
        return userShape.render();
     }
     if (response.shapeType == 'Triangle') {
         var userShape = new Triangle (response.shapeType='polygon', response.shapeColor, response.text,response.textColor)
+        response.shapeType='Triangle';
        // console.log(userShape);
        return userShape.render();
     }
