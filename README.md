@@ -63,9 +63,9 @@ Each shape class (Circle, Square, and Triangle) is tested for a render() method 
 
 ## Screenshots 
 
-![A user clicks on slots on the color-coded calendar and edits the events](./Assets/1.jpg)
+![A user clicks on slots on the color-coded calendar and edits the events](./Assets/1.JPG)
 
-![A user clicks on slots on the color-coded calendar and edits the events](./Assets/2.jpg)
+![A user clicks on slots on the color-coded calendar and edits the events](./Assets/2.JPG)
 
 ![A user clicks on slots on the color-coded calendar and edits the events](./Assets/circle.svg)
 
